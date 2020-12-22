@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
+import fCCLoop from '../Images/fCCChicagoLoop.jpg';
 
 
-const StyledHome = styled.div`
+const StyledHome = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,6 +13,13 @@ const StyledHome = styled.div`
   p {
     font-size: 1.25em;
   }
+`
+
+const HomeImage = styled.img`
+  height: 80%;
+  max-height: 50vh;
+  margin-top: 4em;
+  border: 2px solid white;
 `
 
 const StyledQuote = styled.div`
@@ -41,6 +49,7 @@ const Home = () => {
 
   return (
     <StyledHome>
+      <HomeImage src={fCCLoop} alt="freeCodeCamp Chicago Loop" />
       {data.length > 0 ?
         <StyledQuote>
           <p>"{data[rando].text}"</p>

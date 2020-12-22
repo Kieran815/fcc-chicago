@@ -1,22 +1,51 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledContact = styled.div`
+const StyledContact = styled.section`
+  background-color: #1b1b32;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
   margin: 1em 7em 7em 7em;
+  min-height: 100vh;
   p {
     font-size: 1.25em;
   }
 `
 
+const StyledLink = styled.a`
+  text-decoration: none;
+  font-weight: bolder;
+  color: #f1be32;
+  margin-right: 0.5em;
+  &:hover {
+    color: #f1be32;
+  }
+`
+
+const Notice = styled.p`
+  color: #ff7f7f;
+  text-align: center;
+`
+
 const Contact = () => {
   return(
     <StyledContact>
-      <h1>What is Lorem Ipsum?</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget orci eget arcu mattis tincidunt vitae ut dui. Vivamus eu lectus a est gravida hendrerit. Aenean pellentesque pretium libero nec malesuada. Nullam pharetra mi a dolor auctor dapibus. Nulla sit amet lacus blandit, porta eros in, aliquet metus. Cras in risus accumsan, molestie metus eget, tincidunt dolor. Nunc consectetur id quam eget posuere. Duis pretium a eros a volutpat. Pellentesque cursus luctus facilisis. Sed commodo est ut neque volutpat varius. Praesent quis convallis velit. Quisque convallis ligula sed sem pellentesque fermentum. Sed lectus ante, fringilla mollis ipsum nec, porttitor maximus libero. Proin pharetra massa eget lorem ullamcorper tempor. Praesent lacinia turpis eget orci vehicula lacinia. Aenean consectetur, tellus ac vehicula semper, nibh sem maximus nunc, sed consequat tellus mauris non neque. In lacinia, odio gravida maximus blandit, magna purus congue nisl, et pulvinar justo diam et neque. Integer eget massa in ligula tincidunt ornare in imperdiet ex. Praesent ultricies enim et nulla maximus tempor. Mauris tincidunt eu magna nec tristique. Fusce at elementum leo. Donec in nulla nulla. Suspendisse vehicula semper metus in scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper tellus metus, a volutpat urna lobortis nec. Duis tristique sodales tellus, non consequat arcu congue a. Vivamus eu ex purus. Aenean congue felis quis mi accumsan sagittis. Etiam varius ipsum nec velit scelerisque tempus. Praesent eget metus eu leo dignissim tempus a vitae leo. Mauris bibendum orci ac magna eleifend laoreet. Ut egestas, lacus fringilla euismod imperdiet, leo nisl dignissim elit, sit amet mattis purus risus ut ex. Integer non mi mauris. Donec vel lectus sed lorem placerat finibus in ac eros. Donec semper est in suscipit sollicitudin. Nunc eleifend metus vel orci porta dapibus. Integer sit amet leo cursus, luctus ipsum non, ultrices velit. Aenean euismod gravida pulvinar. Sed luctus felis diam, a viverra dui mollis dictum. Suspendisse elementum tristique eros, nec gravida purus hendrerit eu. Sed tempor venenatis purus, eget euismod mauris condimentum vel. Donec vel tincidunt eros, vitae viverra orci. Proin accumsan vitae velit et pellentesque. Integer laoreet nisi a ipsum aliquam bibendum. Cras hendrerit ullamcorper augue. Vivamus sodales hendrerit mauris id eleifend. Maecenas feugiat lorem sit amet dolor consequat, vitae maximus nisl euismod. Aenean vel rutrum felis, ut ullamcorper augue. Nam eu malesuada libero, sed vulputate dolor. Donec pulvinar fringilla nulla, in tristique risus semper quis. In efficitur, massa at ullamcorper sagittis, velit mi imperdiet ex, sit amet aliquam velit arcu eu magna. Praesent eu porta tellus. Donec arcu lacus, semper eu magna sit amet, volutpat auctor sem. Nam porttitor vitae est sit amet egestas. Nam consectetur, eros sed placerat convallis, tellus magna ornare metus, nec vehicula massa justo at nisi. Nam feugiat ultrices sem, sed ultrices elit porttitor vitae. In vel purus sit amet tortor sollicitudin egestas. Donec sit amet magna in justo faucibus varius non vitae orci. Ut volutpat vehicula est ac fermentum. Sed feugiat, mauris non rhoncus pretium, urna nunc placerat ex, vitae accumsan lacus erat a mauris.</p>
+      <h1>Join the Fun!!!</h1>
+
+      <p>Sign up to join our Weekly Coding Sessions on Sunday from 1p-5p. Topics range from freeCodeCamp curriculum to deep-dives on new and emerging technologies.</p>
+
+      <p>Register for our sessions through <StyledLink href="https://www.meetup.com/Free-Code-Camp-Chicago/" target="_blank" rel="noopener noreferrer">MeetUp</StyledLink>or <StyledLink href="" target="_blank" rel="noopener noreferrer">Eventbrite.</StyledLink></p>
+
+      <Notice>*** Due to COVID-19, we are currently meeting remotely using the <StyledLink href="https://meet.jit.si/" target="_blank" rel="noopener noreferrer">Jitsi</StyledLink>app ***<br /><sup>(Also available on your preferred app store)</sup></Notice>
+
+
+      <p>Join our discussion boards on <StyledLink href="https://fcc-chicago-loop.slack.com/join/shared_invite/enQtNjUyNjgyMTI4NjE1LTUxYmNlOGNlYjE4ZTllZGU3NGY4Y2FhYmI0YTUzYjIxNzM1MWY1ZmM0OGIyZjQ1MzgxMDc0OTYyODgxMmY0NTA#/" target="_blank" rel="noopener noreferrer">Slack</StyledLink>to stay up-to-date on our latest events or ask for guidance.</p>
+
+
     </StyledContact>
   )
 }
