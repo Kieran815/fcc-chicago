@@ -86,7 +86,7 @@ const About = () => {
 
         <li>I live in the Chicago area but meetings in the Loop would not be convenient for me to get to. Can I still join the group?</li>
         <p>Yes, you may still join this group and be part of the online community, but with that said you may be served better by finding a group that is more convenient for you to participate in the in person meetups.</p>
-        <Notice>*** Due to COVID-19, we are currently meeting remotely using the <StyledLink href="https://meet.jit.si/" target="_blank" rel="noopener noreferrer">Jitsi</StyledLink>app ***<br /><sup>(Also available for <StyledLink href="https://play.google.com/store/apps/details?id=org.jitsi.meet&hl=en&gl=US" target="_blank" rel="noopener noreferrer">Android</StyledLink> or <StyledLink href="https://apps.apple.com/us/app/jitsi-meet/id1165103905" target="_blank" rel="noopener noreferrer">iPhone</StyledLink></sup>)</Notice>
+        <Notice>*** Due to COVID-19, we are currently meeting remotely using the <StyledLink href="https://meet.jit.si/" target="_blank" rel="noopener noreferrer">Jitsi</StyledLink>app ***<br /><sup>(Also available for <StyledLink href="https://play.google.com/store/apps/details?id=org.jitsi.meet&hl=en&gl=US" target="_blank" rel="noopener noreferrer">Android</StyledLink>or <StyledLink href="https://apps.apple.com/us/app/jitsi-meet/id1165103905" target="_blank" rel="noopener noreferrer">iPhone</StyledLink>)</sup></Notice>
 
 
       </StyledList>
