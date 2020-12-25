@@ -14,6 +14,7 @@ import styled from 'styled-components';
 const StyledBody = styled.div`
   background-color: #2a2a40;
   color: #fff;
+  margin-top: 4vh;
 `
 
 function App() {

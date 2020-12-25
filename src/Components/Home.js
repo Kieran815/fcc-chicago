@@ -12,7 +12,7 @@ const StyledHome = styled.main`
 `
 
 const HomeImage = styled.img`
-  margin-top: 4em;
+  margin-top: 1em;
   max-width: 100%;
 `
 

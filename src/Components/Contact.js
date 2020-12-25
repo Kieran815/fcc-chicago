@@ -28,7 +28,7 @@ const Contact = () => {
 
       <p>Sign up to join our Weekly Coding Sessions on Sunday from 1p-5p. Topics range from freeCodeCamp curriculum to deep-dives on new and emerging technologies.</p>
 
-      <p>Register for our sessions through <StyledLink href="https://www.meetup.com/Free-Code-Camp-Chicago/" target="_blank" rel="noopener noreferrer">MeetUp</StyledLink>or <StyledLink href="" target="_blank" rel="noopener noreferrer">Eventbrite.</StyledLink></p>
+      <p>Register for our sessions through <StyledLink href="https://www.meetup.com/Free-Code-Camp-Chicago/" target="_blank" rel="noopener noreferrer">MeetUp</StyledLink> or <StyledLink href="" target="_blank" rel="noopener noreferrer">Eventbrite.</StyledLink></p>
 
       <Notice>
         *** Due to COVID-19 ***<br/>
@@ -37,7 +37,7 @@ const Contact = () => {
       </Notice>
 
 
-      <p>Join our discussion boards on <StyledLink href="https://fcc-chicago-loop.slack.com/join/shared_invite/enQtNjUyNjgyMTI4NjE1LTUxYmNlOGNlYjE4ZTllZGU3NGY4Y2FhYmI0YTUzYjIxNzM1MWY1ZmM0OGIyZjQ1MzgxMDc0OTYyODgxMmY0NTA#/" target="_blank" rel="noopener noreferrer">Slack</StyledLink>to stay up-to-date on our latest events or ask for guidance.</p>
+      <p>Join our discussion boards on <StyledLink href="https://fcc-chicago-loop.slack.com/join/shared_invite/enQtNjUyNjgyMTI4NjE1LTUxYmNlOGNlYjE4ZTllZGU3NGY4Y2FhYmI0YTUzYjIxNzM1MWY1ZmM0OGIyZjQ1MzgxMDc0OTYyODgxMmY0NTA#/" target="_blank" rel="noopener noreferrer">Slack</StyledLink> to stay up-to-date on our latest events or ask for guidance.</p>
 
 
     </StyledContact>
