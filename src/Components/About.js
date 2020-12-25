@@ -3,39 +3,21 @@ import styled from 'styled-components';
 
 const StyledAbout = styled.div`
   background-color: #1b1b32;
-  font-size: 1.25em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  margin: 1em 7em 7em 7em;
-  min-height: 100vh;
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 2em;
-  }
-  p {
-    padding: 1.5em;
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #fff;
-  }
+  padding: 5em 1em 2em 1em;
+  font-size: 1.25em;
 `
 
 const StyledList = styled.ul`
-  font-weight: 900;
-  text-align: left;
+  font-weight: 700;
+  padding: 0;
   list-style-type: none;
+  text-align: center;
+  font-weight: 400;
   li {
-    text-align: center;
-    font-size: 1.5em;
-    background-color: #00471b;
-    border: 2px solid #fff;
-    padding: 0.25em;
-    margin: 0.25em;
+    background-color: #3b3b4f;
+    border: 3px solid #fff;
+    padding: .5em;
     margin-top: 3em;
   }
   p{
@@ -45,9 +27,7 @@ const StyledList = styled.ul`
 
 const StyledLink = styled.a`
   text-decoration: none;
-  font-weight: bolder;
   color: #f1be32;
-  margin-right: 0.5em;
   &:hover {
     color: #f1be32;
   }
@@ -55,7 +35,6 @@ const StyledLink = styled.a`
 
 const Notice = styled.p`
   color: #ff7f7f !important;
-  text-align: center;
 `
 
 const About = () => {
@@ -66,6 +45,13 @@ const About = () => {
 
       <h2>Frequently Asked Questions</h2>
       <p>This group was created as a way to connect people who are participating in or alumni of <StyledLink href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freecodecamp.org</StyledLink> who live in Chicago, Illinois and want to join in on in-person meetups, located within the Loop area. </p>
+
+      <Notice>
+        *** Due to COVID-19 ***<br/>
+        We are currently meeting remotely using the <StyledLink href="https://meet.jit.si/" target="_blank" rel="noopener noreferrer">Jitsi</StyledLink> app.<br />
+        <sup>(Also available for <StyledLink href="https://play.google.com/store/apps/details?id=org.jitsi.meet&hl=en&gl=US" target="_blank" rel="noopener noreferrer">Android</StyledLink> or <StyledLink href="https://apps.apple.com/us/app/jitsi-meet/id1165103905" target="_blank" rel="noopener noreferrer">iPhone</StyledLink>)</sup>
+      </Notice>
+
       <p>This group is for anyone who wants to meet in person to help each other learn and hold each other accountable while working through the freeCodeCamp curriculum. We may even have some fun along the way.</p>
 
       <StyledList>
@@ -86,7 +72,7 @@ const About = () => {
 
         <li>I live in the Chicago area but meetings in the Loop would not be convenient for me to get to. Can I still join the group?</li>
         <p>Yes, you may still join this group and be part of the online community, but with that said you may be served better by finding a group that is more convenient for you to participate in the in person meetups.</p>
-        <Notice>*** Due to COVID-19, we are currently meeting remotely using the <StyledLink href="https://meet.jit.si/" target="_blank" rel="noopener noreferrer">Jitsi</StyledLink>app ***<br /><sup>(Also available for <StyledLink href="https://play.google.com/store/apps/details?id=org.jitsi.meet&hl=en&gl=US" target="_blank" rel="noopener noreferrer">Android</StyledLink>or <StyledLink href="https://apps.apple.com/us/app/jitsi-meet/id1165103905" target="_blank" rel="noopener noreferrer">iPhone</StyledLink>)</sup></Notice>
+
 
 
       </StyledList>

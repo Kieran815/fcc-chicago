@@ -12,23 +12,8 @@ import styled from 'styled-components';
 
 // Body Styles
 const StyledBody = styled.div`
-  background-color: #1b1b32;
-  font-family: 'Roboto Mono', monospace;
+  background-color: #2a2a40;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4vh;
-  height: 100%;
-  width: 100%
-  p {
-    font-size: 1.25em;
-    text-align: center;
-  }
-  html {
-    overflow: hidden;
-  }
 `
 
 function App() {
