@@ -23,6 +23,13 @@ const StyledNav = styled.nav`
   position: fixed;
   top: 0;
   text-align: center;
+  @media only screen and (min-width: 899px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.25em 0.5em 0.25em 0;
+  }
 `
 
 // nav Images
@@ -38,6 +45,16 @@ const ChiFlag = styled(NavImg)`
 
 
 // navigation row
+
+const FccStyledLogo = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50%;
+  max-height: 3em;
+  padding-top: 1em;
+`
+
 const MainLinks = styled.div`
   display: flex;
   justify-content: space-between;
@@ -52,6 +69,9 @@ const MainLinks = styled.div`
     text-decoration: none;
     color: #fff;
     font-weight: 900;
+  }
+  @media only screen and (min-width: 899px) {
+    width: 100%;
   }
 `
 
@@ -79,13 +99,13 @@ const Header = () => {
 
   return(
     <StyledNav>
-      <NavImg src={fccLogo} alt="freeCodeCamp Chicago" />
+      <FccStyledLogo src={fccLogo} alt="freeCodeCamp Chicago" />
       <MainLinks>
         <Link to="/">
-            <LocationBanner>
-              <ChiFlag src={chiFlag} alt="Chicago Flag" />
-              <h1>{'{Chicago Loop}'}</h1>
-            </LocationBanner>
+          <LocationBanner>
+            <ChiFlag src={chiFlag} alt="Chicago Flag" />
+            <h1>{'{Chicago Loop}'}</h1>
+          </LocationBanner>
         </Link>
         <Button
           aria-controls="simple-menu"

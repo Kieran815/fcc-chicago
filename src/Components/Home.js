@@ -9,14 +9,28 @@ const StyledHome = styled.main`
   text-align: center;
   padding: 5em 1em 2em 1em;
   font-size: 1.25em;
+  @media screen and (min-width: 899px) {
+    p {
+      padding: 0 2em 0 2em;
+    }
+  }
 `
 
 const HomeImage = styled.img`
   margin-top: 1em;
   max-width: 100%;
+  @media screen and (min-width: 899px) {
+    max-width: 60%;
+    max-height: auto;
+  }
 `
 
 const StyledQuote = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   font-weight: bold;
   p:nth-child(2) {
     text-align: right;

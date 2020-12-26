@@ -6,6 +6,14 @@ const StyledAbout = styled.div`
   text-align: center;
   padding: 5em 1em 2em 1em;
   font-size: 1.25em;
+  @media screen and (min-width: 899px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      max-width: 75%;
+    }
+  }
 `
 
 const StyledList = styled.ul`
@@ -20,7 +28,18 @@ const StyledList = styled.ul`
     padding: .5em;
     margin-top: 3em;
   }
-  p{
+  @media screen and (min-width: 899px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      padding: 0 2em 0 2em;
+      max-width: 75%;
+    }
+    li {
+      padding: 0.5em 3em 0.5em 3em;
+      max-width: 75%;
+    }
   }
 
 `

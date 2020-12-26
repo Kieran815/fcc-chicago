@@ -6,6 +6,15 @@ const StyledContact = styled.main`
   text-align: center;
   padding: 5em 1em 2em 1em;
   font-size: 1.25em;
+  min-height: 60vh;
+  @media screen and (min-width: 899px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      max-width: 75%;
+    }
+  }
 `
 
 const StyledLink = styled.a`
