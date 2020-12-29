@@ -33,6 +33,7 @@ const Notice = styled.p`
 const Contact = () => {
   return(
     <StyledContact>
+      <div id="top"></div>
       <h1>Join the Fun!!!</h1>
 
       <p>Sign up to join our Weekly Coding Sessions on Sunday from 1p-5p. Topics range from freeCodeCamp curriculum to deep-dives on new and emerging technologies.</p>

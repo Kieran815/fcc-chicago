@@ -59,6 +59,7 @@ const Notice = styled.p`
 const About = () => {
   return(
     <StyledAbout>
+      <div id="top"></div>
       <h1>Hello from About</h1>
       <p>Members of this group should also follow the same rules as outlined on the <StyledLink href="https://www.freecodecamp.org/forum/guidelines" target="_blank" rel="noopener noreferrer">freeCodeCamp Forum.</StyledLink></p>
 

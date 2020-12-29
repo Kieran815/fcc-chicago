@@ -55,9 +55,8 @@ const Home = () => {
 
   return (
     <StyledHome>
-
-      <HomeImage src={fCCLoop} alt="freeCodeCamp Chicago Loop" />
-
+      <div id="top"></div>
+      <HomeImage src={fCCLoop} alt="freeCodeCamp Chicago Loop" id="top" />
       {data.length > 0 ?
         <StyledQuote>
           <p>"{data[rando].text}"</p>

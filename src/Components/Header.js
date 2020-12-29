@@ -80,7 +80,9 @@ const LocationBanner = styled.div`
   align-items: center;
 `
 
-
+const StyledMenuItem = styled(MenuItem)`
+  margin: 5vh;
+`
 
 
 // Header JS Start
@@ -123,10 +125,9 @@ const Header = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose} className="MuiPaper-root"
-        style={{ "backgroundColor": "#000" }}>
+        <StyledMenuItem onClick={handleClose}>
           <Link to="/">{'{Home}'}</Link>
-        </MenuItem>
+        </StyledMenuItem>
         <MenuItem onClick={handleClose}>
           <Link to="/about">{'{About}'}</Link>
         </MenuItem>
