@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/fcc-chicago/static/css/main.3d47e173.chunk.css",
-    "main.js": "/fcc-chicago/static/js/main.9c40cf7f.chunk.js",
-    "main.js.map": "/fcc-chicago/static/js/main.9c40cf7f.chunk.js.map",
+    "main.js": "/fcc-chicago/static/js/main.2bf9283f.chunk.js",
+    "main.js.map": "/fcc-chicago/static/js/main.2bf9283f.chunk.js.map",
     "runtime-main.js": "/fcc-chicago/static/js/runtime-main.66069644.js",
     "runtime-main.js.map": "/fcc-chicago/static/js/runtime-main.66069644.js.map",
-    "static/js/2.9adb5009.chunk.js": "/fcc-chicago/static/js/2.9adb5009.chunk.js",
-    "static/js/2.9adb5009.chunk.js.map": "/fcc-chicago/static/js/2.9adb5009.chunk.js.map",
+    "static/js/2.36cb8071.chunk.js": "/fcc-chicago/static/js/2.36cb8071.chunk.js",
+    "static/js/2.36cb8071.chunk.js.map": "/fcc-chicago/static/js/2.36cb8071.chunk.js.map",
     "index.html": "/fcc-chicago/index.html",
     "static/css/main.3d47e173.chunk.css.map": "/fcc-chicago/static/css/main.3d47e173.chunk.css.map",
-    "static/js/2.9adb5009.chunk.js.LICENSE.txt": "/fcc-chicago/static/js/2.9adb5009.chunk.js.LICENSE.txt",
+    "static/js/2.36cb8071.chunk.js.LICENSE.txt": "/fcc-chicago/static/js/2.36cb8071.chunk.js.LICENSE.txt",
     "static/media/LOGO-CHICAGO-hor.6bab3141.png": "/fcc-chicago/static/media/LOGO-CHICAGO-hor.6bab3141.png",
     "static/media/fCCChicagoLoop.52d08d3d.jpg": "/fcc-chicago/static/media/fCCChicagoLoop.52d08d3d.jpg",
     "static/media/fcc_primary_large.895be9c4.jpg": "/fcc-chicago/static/media/fcc_primary_large.895be9c4.jpg",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.66069644.js",
-    "static/js/2.9adb5009.chunk.js",
+    "static/js/2.36cb8071.chunk.js",
     "static/css/main.3d47e173.chunk.css",
-    "static/js/main.9c40cf7f.chunk.js"
+    "static/js/main.2bf9283f.chunk.js"
   ]
 }
