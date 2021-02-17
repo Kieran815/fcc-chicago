@@ -101,7 +101,6 @@ const Header = () => {
 
   return(
     <StyledNav>
-      <FccStyledLogo src={fccLogo} alt="freeCodeCamp Chicago" />
       <MainLinks>
         <Link to="/">
           <LocationBanner>
@@ -109,6 +108,7 @@ const Header = () => {
             <h1>{'{Chicago Loop}'}</h1>
           </LocationBanner>
         </Link>
+        <FccStyledLogo src={fccLogo} alt="freeCodeCamp Chicago" />
         <Button
           aria-controls="simple-menu"
           aria-haspopup="true"
