@@ -1,20 +1,16 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import styled from 'styled-components';
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import MenuIcon from '@material-ui/icons/Menu';
+import styled from "styled-components";
+import Button from "@material-ui/core/Button";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import MenuIcon from "@material-ui/icons/Menu";
 
-import fccLogo from '../Images/fcc_primary_large.jpg';
-import chiFlag from '../Images/LOGO-CHICAGO-hor.png';
+import fccLogo from "../Images/fcc_primary_large.jpg";
+import chiFlag from "../Images/LOGO-CHICAGO-hor.png";
 // leaving in to use later
-import SaxMono from '../Images/saxmono.ttf';
-
-
-
-
+import SaxMono from "../Images/saxmono.ttf";
 
 // Nav Styles
 const StyledNav = styled.nav`
@@ -30,19 +26,18 @@ const StyledNav = styled.nav`
     align-items: baseline;
     padding: 0.25em 0.5em 0.25em 0;
   }
-`
+`;
 
 // nav Images
 const NavImg = styled.img`
   padding-top: 1em;
   max-height: 5vh;
-`
+`;
 
 const ChiFlag = styled(NavImg)`
   height: 4vh;
   margin-bottom: 13px;
-`
-
+`;
 
 // navigation row
 
@@ -53,7 +48,7 @@ const FccStyledLogo = styled.img`
   max-width: 50%;
   max-height: 3em;
   padding-top: 1em;
-`
+`;
 
 const MainLinks = styled.div`
   display: flex;
@@ -62,7 +57,7 @@ const MainLinks = styled.div`
   font-weight: 300;
   a {
     text-decoration: none;
-    font-size: .9em;
+    font-size: 0.9em;
     color: #fff;
   }
   button {
@@ -73,17 +68,16 @@ const MainLinks = styled.div`
   @media only screen and (min-width: 899px) {
     width: 100%;
   }
-`
+`;
 
 const LocationBanner = styled.div`
   display: flex;
   align-items: center;
-`
+`;
 
 const StyledMenuItem = styled(MenuItem)`
   margin: 5vh;
-`
-
+`;
 
 // Header JS Start
 const Header = () => {
@@ -98,17 +92,16 @@ const Header = () => {
     setAnchorEl(null);
   };
 
-
-  return(
+  return (
     <StyledNav>
+      <FccStyledLogo src={fccLogo} alt="freeCodeCamp Chicago" />
       <MainLinks>
         <Link to="/">
           <LocationBanner>
             <ChiFlag src={chiFlag} alt="Chicago Flag" />
-            <h1>{'{Chicago Loop}'}</h1>
+            <h1>{"{Chicago Loop}"}</h1>
           </LocationBanner>
         </Link>
-        <FccStyledLogo src={fccLogo} alt="freeCodeCamp Chicago" />
         <Button
           aria-controls="simple-menu"
           aria-haspopup="true"
@@ -126,18 +119,17 @@ const Header = () => {
         onClose={handleClose}
       >
         <StyledMenuItem onClick={handleClose}>
-          <Link to="/">{'{Home}'}</Link>
+          <Link to="/">{"{Home}"}</Link>
         </StyledMenuItem>
         <MenuItem onClick={handleClose}>
-          <Link to="/about">{'{About}'}</Link>
+          <Link to="/about">{"{About}"}</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link to="/contact">{'{Join Us!}'}</Link>
+          <Link to="/contact">{"{Join Us!}"}</Link>
         </MenuItem>
       </Menu>
     </StyledNav>
-
-  )
-}
+  );
+};
 
 export default Header;
