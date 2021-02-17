@@ -20,9 +20,6 @@ const StyledNav = styled.nav`
   top: 0;
   text-align: center;
   @media only screen and (min-width: 899px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: baseline;
     padding: 0.25em 0.5em 0.25em 0;
   }
@@ -42,17 +39,20 @@ const ChiFlag = styled(NavImg)`
 // navigation row
 
 const FccStyledLogo = styled.img`
-  display: block;
+  display: fixed;
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 50%;
   max-height: 3em;
   padding-top: 1em;
+  grid-area: fcc;
 `;
 
 const MainLinks = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas:
+    "fcc fcc"
+    "loc btn";
   font-size: 1em;
   font-weight: 300;
   a {
@@ -64,19 +64,25 @@ const MainLinks = styled.div`
     text-decoration: none;
     color: #fff;
     font-weight: 900;
+    justify-self: end;
+    grid-area: btn;
   }
   @media only screen and (min-width: 899px) {
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "loc fcc btn";
   }
 `;
 
 const LocationBanner = styled.div`
   display: flex;
+  flex-wrap: no-wrap;
   align-items: center;
+  grid-area: loc;
 `;
 
-const StyledMenuItem = styled(MenuItem)`
-  margin: 5vh;
+const StyledMenuIcon = styled(MenuIcon)`
+  display: flex;
+  flex-direction: column;
 `;
 
 // Header JS Start
@@ -94,7 +100,6 @@ const Header = () => {
 
   return (
     <StyledNav>
-      <FccStyledLogo src={fccLogo} alt="freeCodeCamp Chicago" />
       <MainLinks>
         <Link to="/">
           <LocationBanner>
@@ -102,12 +107,13 @@ const Header = () => {
             <h1>{"{Chicago Loop}"}</h1>
           </LocationBanner>
         </Link>
+        <FccStyledLogo src={fccLogo} alt="freeCodeCamp Chicago" />
         <Button
           aria-controls="simple-menu"
           aria-haspopup="true"
           onClick={handleClick}
         >
-          <MenuIcon fontSize="large" />
+          <StyledMenuIcon fontSize="large" />
         </Button>
       </MainLinks>
 
@@ -118,9 +124,9 @@ const Header = () => {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem onClick={handleClose}>
+        <MenuItem onClick={handleClose}>
           <Link to="/">{"{Home}"}</Link>
-        </StyledMenuItem>
+        </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link to="/about">{"{About}"}</Link>
         </MenuItem>
